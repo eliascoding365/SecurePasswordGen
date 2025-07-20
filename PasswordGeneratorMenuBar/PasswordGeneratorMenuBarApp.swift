@@ -1,17 +1,13 @@
-//
-//  PasswordGeneratorMenuBarApp.swift
-//  PasswordGeneratorMenuBar
-//
-//  Created by Malu Montan on 7/19/25.
-//
-
 import SwiftUI
+import AppKit
 
 @main
 struct PasswordGeneratorMenuBarApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        Settings {
+            EmptyView()
         }
     }
 }
